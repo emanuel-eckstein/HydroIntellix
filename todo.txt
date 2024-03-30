@@ -1,0 +1,53 @@
+Dateienstruktur
+
+1. Tutorial
+ i.  Hardwareliste
+--> Lam
+pin header 2.54mm
+usb micro kabel für arduino
+Muttern
+Metallstangen
+Schlauchmaterial / Verbindungsstücke
+kleine schrauben/Muttern
+
+ ii. Werkzeugliste
+Lötkolben, Dritte Hand, Entlötpumpe, Lötzinn
+Zange
+Hobby/Cutter-Messer
+Multimeter (Spannungs und Widerstandsprüfung)
+3D-Drucker
+optional:
+DC Voltage supply
+Steckbrückenkabel
+
+ iii. Softwareliste
+	a) Programme / Tutorials
+	Arduino IDE 1.8.18, ermöglicht einfachen Zugriff auf seriellen Monitor, andere auch möglich
+	b) Testcode
+	Der Sinn des Testcodes besteht darin, die Funktionalität des Sensors, Motors und LoRa-Moduls zu testen. 
+		Sender Testcode
+		Empfänger Testcode	
+	c) echter Code
+	Sender Code, Bewässerungsperiode ~45min
+	Empfänger Code
+	
+ iv. Zusammenbau
+ Siehe Platine
+ vorsichtiges Löten
+ v. 
+2. STL-Dateien (FreeCAD)
+3. PCB-Dateien
+4. Wasserdichtheit
+	Epoxy
+
+Einkaufen:
+	
+Muttern
+Metallstangen
+Schlauchmaterial / Verbindungsstücke
+
+Todo:
+CAD/STL Dateien aufräumen
+PCB Dateien aufräumen
+technische Zeichnung aufräumen
+ 	
