@@ -1,5 +1,6 @@
 //In diesem Code werden die Pumpenrelais vorerst durch LED's simuliert. Es empfielt sich, ein Relais stets mit einem Transistor zu schalten, 
 //da auch die Relaisströme zu hoch für einen Arduino sein können. Dieser Testcode ist für die Nachrichten SENSOR{1/2/3}DRY konfiguriert. 
+//Hier erfolgt keine Aufzeichnung der Messungen der Sensoren
 #include <SPI.h>
 #include <LoRa.h>
 int LED = 4; // PIN 4 für die LED am Empfänger
@@ -24,7 +25,7 @@ void loop() {
     while (LoRa.available()) {
       receivedMsg += (char)LoRa.read();
     }
-    if (receivedMsg == "SENSOR1DRY" || receivedMsg == "SENSOR2DRY" || receivedMsg == "SENSOR3DRY") {
+    if (receivedMsg == "S1ON" || receivedMsg == "S2ON" || receivedMsg == "S3ON") {
       digitalWrite(LED, HIGH); // LED am Empfänger einschalten
       delay(5000); // Für 5 Sekunden leuchten lassen
       digitalWrite(LED, LOW); // LED am Empfänger ausschalten
